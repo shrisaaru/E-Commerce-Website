@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexMart — Premium Online Shopping</title>
+  <meta name="description" content="Shop the latest electronics, fashion, shoes, and accessories at NexMart. Best prices, fast delivery, and premium quality guaranteed." />
+  <meta name="keywords" content="online shopping, electronics, fashion, shoes, accessories, NexMart" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛍️</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <header id="navbar" role="banner">
+    <div class="navbar__inner">
+
+      <a href="index.html" class="navbar__logo" aria-label="NexMart Home">
+        <span class="logo-icon" aria-hidden="true">🛍</span>
+        <span>NexMart</span>
+      </a>
+
+      <button id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="nav-menu" aria-label="Main navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="products.html?category=Electronics" class="nav-link">Electronics</a>
+        <a href="products.html?category=Fashion" class="nav-link">Fashion</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="login.html" class="btn btn--primary btn--sm navbar__login">Login</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <div class="search-wrap">
+          <button id="search-toggle" class="nav-icon-btn" aria-label="Search" aria-expanded="false">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </button>
+          <div id="search-bar" role="search">
+            <input type="search" id="search-input" placeholder="Search products…" aria-label="Search products" />
+          </div>
+        </div>
+
+        <a href="products.html" class="nav-icon-btn" aria-label="Wishlist" id="wishlist-nav-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span class="wishlist-count" aria-label="Wishlist items">0</span>
+        </a>
+
+        <a href="cart.html" class="nav-icon-btn" aria-label="Shopping cart" id="cart-nav-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count" aria-label="Cart items">0</span>
+        </a>
+
+        <a href="login.html" class="btn btn--primary btn--sm btn--login-nav">Login</a>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__grid-overlay" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <div class="hero__content">
+          <div class="hero__tag">
+            <span class="dot" aria-hidden="true"></span>
+            New Arrivals 2026
+          </div>
+          <h1 class="hero__title" id="hero-heading">
+            Shop the Future.<br />
+            <span class="gradient-text">Style Defined.</span>
+          </h1>
+          <p class="hero__subtitle">
+            Discover premium electronics, fashion, shoes, and accessories — all curated for your modern lifestyle. Free delivery on orders over ₹5,000.
+          </p>
+          <div class="hero__cta">
+            <a href="products.html" class="btn btn--primary btn--lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              Shop Now
+            </a>
+            <a href="#featured" class="btn btn--outline btn--lg">Explore Products</a>
+          </div>
+          <div class="hero__stats">
+            <div class="hero__stat-item">
+              <div class="hero__stat-num">50K+</div>
+              <div class="hero__stat-label">Happy Customers</div>
+            </div>
+            <div class="hero__stat-item">
+              <div class="hero__stat-num">2K+</div>
+              <div class="hero__stat-label">Products</div>
+            </div>
+            <div class="hero__stat-item">
+              <div class="hero__stat-num">4.9★</div>
+              <div class="hero__stat-label">Avg Rating</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__visual-inner">
+            <div class="hero__ring hero__ring-1"></div>
+            <div class="hero__ring hero__ring-2"></div>
+            <div class="hero__ring hero__ring-3"></div>
+
+            <div class="hero__center-card">
+              <div class="card-icon">⌚</div>
+              <h3>ProElite Watch</h3>
+              <p>Smart Fitness Tracker</p>
+              <div class="card-price">₹2,499</div>
+            </div>
+
+            <div class="hero__float-badge hero__float-badge--1">🚚 Free Delivery</div>
+            <div class="hero__float-badge hero__float-badge--2">✓ Authentic</div>
+            <div class="hero__float-badge hero__float-badge--3">🔥 Hot Deals</div>
+            <div class="hero__float-badge hero__float-badge--4">❤️ 50K+ Happy</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ STATS ═══════════════ -->
+    <section class="stats-section section-sm" aria-label="Store statistics">
+      <div class="stats-grid">
+        <div class="stat-box slide-up">
+          <span class="stat-number" data-target="50000" data-suffix="+">50,000+</span>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="stat-box slide-up">
+          <span class="stat-number" data-target="2500" data-suffix="+">2,500+</span>
+          <div class="stat-label">Products Listed</div>
+        </div>
+        <div class="stat-box slide-up">
+          <span class="stat-number" data-target="150" data-suffix="+">150+</span>
+          <div class="stat-label">Brands Available</div>
+        </div>
+        <div class="stat-box slide-up">
+          <span class="stat-number" data-target="99" data-suffix="%">99%</span>
+          <div class="stat-label">Customer Satisfaction</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ CATEGORIES ═══════════════ -->
+    <section class="section" id="categories" aria-labelledby="cat-heading">
+      <div class="container">
+        <div class="section-header slide-up">
+          <div class="section-tag">🗂️ Browse by Category</div>
+          <h2 id="cat-heading">Shop by <span class="gradient-text">Category</span></h2>
+          <p>Explore our wide range of product categories carefully curated for every lifestyle</p>
+        </div>
+        <div class="categories__grid">
+          <a href="products.html?category=Electronics" class="category-card slide-up" aria-label="Shop Electronics">
+            <span class="category-card__icon" aria-hidden="true">📱</span>
+            <div class="category-card__name">Electronics</div>
+            <div class="category-card__count">120+ Products</div>
+            <div class="category-card__arrow" aria-hidden="true">→</div>
+          </a>
+          <a href="products.html?category=Fashion" class="category-card slide-up" aria-label="Shop Fashion">
+            <span class="category-card__icon" aria-hidden="true">👗</span>
+            <div class="category-card__name">Fashion</div>
+            <div class="category-card__count">85+ Products</div>
+            <div class="category-card__arrow" aria-hidden="true">→</div>
+          </a>
+          <a href="products.html?category=Shoes" class="category-card slide-up" aria-label="Shop Shoes">
+            <span class="category-card__icon" aria-hidden="true">👟</span>
+            <div class="category-card__name">Shoes</div>
+            <div class="category-card__count">64+ Products</div>
+            <div class="category-card__arrow" aria-hidden="true">→</div>
+          </a>
+          <a href="products.html?category=Accessories" class="category-card slide-up" aria-label="Shop Accessories">
+            <span class="category-card__icon" aria-hidden="true">💼</span>
+            <div class="category-card__name">Accessories</div>
+            <div class="category-card__count">98+ Products</div>
+            <div class="category-card__arrow" aria-hidden="true">→</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ FEATURED PRODUCTS ═══════════════ -->
+    <section class="section" id="featured" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="section-header slide-up">
+          <div class="section-tag">⭐ Best Sellers</div>
+          <h2 id="featured-heading">Featured <span class="gradient-text">Products</span></h2>
+          <p>Handpicked top-rated products loved by thousands of our happy customers</p>
+        </div>
+        <div class="products-grid" id="featured-grid" role="list" aria-label="Featured products"></div>
+        <div class="text-center mt-xl">
+          <a href="products.html" class="btn btn--outline btn--lg">View All Products →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ PROMO BANNER ═══════════════ -->
+    <section class="promo-section section" aria-labelledby="promo-heading">
+      <div class="promo__inner">
+        <div class="promo__content fade-in">
+          <div class="promo__label">🔥 Limited Time Offer</div>
+          <h2 class="promo__title" id="promo-heading">
+            Big Sale — Up to<br />
+            <span class="promo__highlight">50% Off</span> Today!
+          </h2>
+          <p class="promo__desc">Don't miss out on our biggest sale of the year. Grab top-rated products at unbeatable prices before they're gone!</p>
+          <div class="promo__timer" aria-label="Sale countdown timer">
+            <div class="timer-unit">
+              <span class="timer-num" id="timer-h">08</span>
+              <span class="timer-label">Hours</span>
+            </div>
+            <div class="timer-unit">
+              <span class="timer-num" id="timer-m">34</span>
+              <span class="timer-label">Mins</span>
+            </div>
+            <div class="timer-unit">
+              <span class="timer-num" id="timer-s">57</span>
+              <span class="timer-label">Secs</span>
+            </div>
+          </div>
+          <a href="products.html" class="btn btn--primary btn--lg">
+            Grab Deals Now
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="promo__visual" aria-hidden="true">🛍️</div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ WHY CHOOSE US ═══════════════ -->
+    <section class="section" id="about" aria-labelledby="features-heading">
+      <div class="container">
+        <div class="section-header slide-up">
+          <div class="section-tag">💎 Our Promise</div>
+          <h2 id="features-heading">Why Choose <span class="gradient-text">NexMart?</span></h2>
+          <p>We're committed to providing you the best shopping experience with premium service</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card slide-up">
+            <div class="feature-card__icon" style="background: rgba(67,233,123,0.15);" aria-hidden="true">🚀</div>
+            <h3 class="feature-card__title">Fast Delivery</h3>
+            <p class="feature-card__desc">Same-day delivery in metro cities. All orders delivered within 2-3 business days nationwide.</p>
+          </div>
+          <div class="feature-card slide-up">
+            <div class="feature-card__icon" style="background: rgba(108,99,255,0.15);" aria-hidden="true">🔐</div>
+            <h3 class="feature-card__title">Secure Payment</h3>
+            <p class="feature-card__desc">Bank-level encryption with 256-bit SSL. Pay safely via UPI, Cards, Wallets, or COD.</p>
+          </div>
+          <div class="feature-card slide-up">
+            <div class="feature-card__icon" style="background: rgba(255,159,67,0.15);" aria-hidden="true">↩️</div>
+            <h3 class="feature-card__title">Easy Returns</h3>
+            <p class="feature-card__desc">30-day hassle-free returns. No questions asked. Full refund or exchange guaranteed.</p>
+          </div>
+          <div class="feature-card slide-up">
+            <div class="feature-card__icon" style="background: rgba(72,219,251,0.15);" aria-hidden="true">💬</div>
+            <h3 class="feature-card__title">24/7 Support</h3>
+            <p class="feature-card__desc">Round-the-clock customer support via chat, phone, and email. We're always here for you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ NEWSLETTER ═══════════════ -->
+    <section class="newsletter-section" aria-labelledby="newsletter-heading">
+      <div class="newsletter-inner fade-in">
+        <div class="section-tag" style="display:inline-flex;margin-bottom:1rem;">📧 Newsletter</div>
+        <h2 id="newsletter-heading">Get Exclusive <span class="gradient-text">Deals</span></h2>
+        <p>Subscribe to our newsletter and get the latest deals, new arrivals, and style tips delivered straight to your inbox.</p>
+        <form class="newsletter-form" id="newsletter-form" novalidate role="form" aria-label="Newsletter subscription">
+          <input type="email" placeholder="Enter your email address…" aria-label="Email address" required />
+          <button type="submit" class="btn btn--primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer id="contact" role="contentinfo">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo" aria-label="NexMart">
+          <span class="logo-icon" aria-hidden="true">🛍</span>
+          <span>NexMart</span>
+        </a>
+        <p>Your one-stop premium shopping destination. Quality products, unbeatable prices, and an experience that keeps you coming back.</p>
+        <div class="footer__socials" aria-label="Social media links">
+          <a href="#" class="social-btn" aria-label="Facebook">📘</a>
+          <a href="#" class="social-btn" aria-label="Twitter">🐦</a>
+          <a href="#" class="social-btn" aria-label="Instagram">📸</a>
+          <a href="#" class="social-btn" aria-label="YouTube">📺</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <nav class="footer__links" aria-label="Quick links">
+          <a href="index.html">Home</a>
+          <a href="products.html">All Products</a>
+          <a href="products.html?category=Electronics">Electronics</a>
+          <a href="products.html?category=Fashion">Fashion</a>
+          <a href="products.html?category=Shoes">Shoes</a>
+          <a href="products.html?category=Accessories">Accessories</a>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <h4>Customer Service</h4>
+        <nav class="footer__links" aria-label="Customer service links">
+          <a href="#">My Account</a>
+          <a href="cart.html">View Cart</a>
+          <a href="#">Order Tracking</a>
+          <a href="#">Return Policy</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">FAQ</a>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <h4>Contact Us</h4>
+        <div class="footer__contact-item">
+          <span class="footer__contact-icon" aria-hidden="true">📍</span>
+          <span>123 Commerce Street, Tech Park, Bengaluru 560001</span>
+        </div>
+        <div class="footer__contact-item">
+          <span class="footer__contact-icon" aria-hidden="true">📞</span>
+          <a href="tel:+918001234567">+91 800 123 4567</a>
+        </div>
+        <div class="footer__contact-item">
+          <span class="footer__contact-icon" aria-hidden="true">✉️</span>
+          <a href="mailto:support@nexmart.in">support@nexmart.in</a>
+        </div>
+        <div class="footer__contact-item">
+          <span class="footer__contact-icon" aria-hidden="true">⏰</span>
+          <span>Mon–Sat: 9AM – 8PM IST</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 NexMart. All rights reserved. Made with ❤️ in India</p>
+      <div class="footer__payment" aria-label="Accepted payment methods">
+        <span class="payment-icon">VISA</span>
+        <span class="payment-icon">MC</span>
+        <span class="payment-icon">UPI</span>
+        <span class="payment-icon">RuPay</span>
+        <span class="payment-icon">COD</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Countdown Timer
+    (function() {
+      let total = 8 * 3600 + 34 * 60 + 57;
+      const h = document.getElementById('timer-h');
+      const m = document.getElementById('timer-m');
+      const s = document.getElementById('timer-s');
+      if (!h) return;
+      setInterval(() => {
+        if (total <= 0) return;
+        total--;
+        const hh = Math.floor(total / 3600);
+        const mm = Math.floor((total % 3600) / 60);
+        const ss = total % 60;
+        h.textContent = String(hh).padStart(2, '0');
+        m.textContent = String(mm).padStart(2, '0');
+        s.textContent = String(ss).padStart(2, '0');
+      }, 1000);
+    })();
+  </script>
+</body>
+</html>
